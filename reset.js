@@ -35,6 +35,7 @@ module.exports = function Cloudflare() {
                 gzip: true,
                 proxy: proxy,
                 headers: {
+                    'Protocol': 'TLSv1.3'
                     'Connection': 'Keep-Alive',
                     'Cache-Control': 'max-age=0',
                     'Upgrade-Insecure-Requests': 1,
@@ -65,6 +66,7 @@ module.exports = function Cloudflare() {
                         gzip: true,
                         proxy: proxy,
                         headers: {
+                            'Protocol': 'TLSv1.3'
                             'Connection': 'Keep-Alive',
                             'Cache-Control': 'max-age=0',
                             'Upgrade-Insecure-Requests': 1,
@@ -83,6 +85,7 @@ module.exports = function Cloudflare() {
                                 url: l7.target + "?_asds=" + num,
                                 proxy: proxy,
                                 headers: {
+                                    'Protocol': 'TLSv1.3'
                                     'Connection': 'Keep-Alive',
                                     'Cache-Control': 'max-age=0',
                                     'Upgrade-Insecure-Requests': 1,
@@ -128,6 +131,7 @@ module.exports = function Cloudflare() {
                         url: l7.target + "?_asds=" + num,
                         proxy: proxy,
                         headers: {
+                            'Protocol': 'TLSv1.3'
                             'Connection': 'Keep-Alive',
                             'Cache-Control': 'max-age=0',
                             'Upgrade-Insecure-Requests': 1,
@@ -178,6 +182,7 @@ module.exports = function Cloudflare() {
                 gzip: true,
                 proxy: proxy,
                 headers: {
+                    'Protocol': 'TLSv1.3'
                     'Connection': 'Keep-Alive',
                     'Cache-Control': 'max-age=0',
                     'Upgrade-Insecure-Requests': 1,
